@@ -1,0 +1,29 @@
+{
+  "id": "ev6-kr-android-auto-diagnostics",
+  "name": "EV6 KOR Android Auto Diagnostics",
+  "version": "0.1.0",
+  "hmgapi": ">=1.0.2",
+  "license": "AGPL-3.0",
+  "description": "Records Android Auto navigation callback counts and numeric fields for CVEV KOR 260902.",
+  "live": true,
+  "system": [
+    {
+      "model": ["CVEV"],
+      "region": "KOR",
+      "firmware": "260902"
+    }
+  ],
+  "hooks": {
+    "jar": "hooks.jar",
+    "entry": "hmgapi.mods.ev6kr.AndroidAutoDiagnostics",
+    "points": {
+      "gpm.sensor_source.init": "observe",
+      "gpm.navigation_status.init": "observe",
+      "gpm.navigation_status.status": "observe",
+      "gpm.navigation_status.next_turn": "observe",
+      "gpm.navigation_status.next_turn_distance": "observe",
+      "gpm.receiver.destroy": "observe",
+      "gpm.receiver_service.disconnected": "observe"
+    }
+  }
+}
