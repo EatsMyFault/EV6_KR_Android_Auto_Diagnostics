@@ -21,7 +21,7 @@
 
 1. 티맵이나 네이버지도에서 경로 안내를 시작하고 첫 회전 안내가 뜰 때까지 기다립니다. 경로 안내를 종료한 뒤 휴대폰 케이블을 뺍니다.
 2. HMG-API **Mods → EV6 KOR Android Auto Diagnostics → Log**에서 `AA_DIAG_010` 줄을 캡처합니다. Log 화면이 이미 열려 있었다면 진단 모드를 다시 선택해 최신 로그를 불러옵니다.
-3. 캡처에 `GPM_READY`, `AA_NAV_INIT`, `AA_STATUS`, `AA_TURN`, `AA_DISTANCE`, `AA_DISCONNECTED` 중 보이는 줄을 포함합니다. 없던 줄은 `없음`으로 적고, 사용한 내비 앱과 USB 직결 여부를 함께 [GitHub Issues](https://github.com/EatsMyFault/EV6_KR_Android_Auto_Diagnostics/issues)에 올려주세요.
+3. 캡처에 `GPM_READY`, `AA_NAV_INIT`, `AA_STATUS`, `AA_TURN`, `AA_DISTANCE`, `AA_DISCONNECTED` 중 보이는 줄을 포함합니다. 없던 줄은 `없음`으로 적고, 사용한 내비 앱과 USB 직결 여부를 함께 [GitHub 진단 제보 양식](https://github.com/EatsMyFault/EV6_KR_Android_Auto_Diagnostics/issues/new?template=bug-report.yml)에 올려주세요.
 
 | 로그 | 의미 |
 | --- | --- |
